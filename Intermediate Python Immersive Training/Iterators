@@ -1,0 +1,197 @@
+# fruitstuple = ("banana")
+# newit = iter(fruitstuple)
+
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+
+# fruitstuple = ("banana")
+
+# for i in fruitstuple:
+#     print(i)
+
+# class Counting:
+#     def __iter__(self):
+#         self.a = 1
+#         return self
+    
+#     def __next__(self):
+#         if self.a <= 19:
+#             x = self.a
+#             self.a += 1
+#             return x
+#         else:
+#             raise StopIteration
+    
+# newObj = Counting()
+# newit = iter(newObj)
+
+# # for x in newit:
+# #     print(x)
+
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+# print(next(newit))
+
+
+# def newfunc():
+#     x = 200
+#     #print(x)
+# newfunc()
+# print(x)    
+
+# def newOut():
+#     x = 200
+#     def newIn():
+#         print(x)
+#     newIn()
+# newOut()   
+
+
+# x = 100     
+# def newfunc():
+#     #global x
+#     x = 50
+    
+    
+# newfunc()
+# print(x)    
+
+# number = 25
+# newmsg = "The number is {:.2f} for you!"
+# print(newmsg.format(number))
+
+# quantity = 5
+# itemNumber = 50
+# price = 24
+# firstOrder = "we want {0} pieces of item number {1} for {2:.2f} dollars."
+# print(firstOrder.format(quantity,itemNumber,price))
+
+# age = 45
+# name = "Jack"
+# newTxt = "The name is {1}. {1} is {0} years old."
+# print(newTxt.format(age, name))
+
+# newOrder = "I have a {car}, it is a {model}"
+# print(newOrder.format(car = "Vovlo", model = "s60"))
+
+# def Items():
+#     print("First item!")
+#     yield 15
+    
+#     return
+#     print("Second item!")
+#     yield 25
+    
+#     print("Last item!")
+#     yield 40
+    
+# newGenerat = Items()
+
+# print(next(newGenerat))
+# print(next(newGenerat))
+# print(next(newGenerat))    
+# print(next(newGenerat))
+    
+
+
+# def newUpTo(x):
+#     for i in range(x):
+#         yield i
+        
+# seq1 = newUpTo(7)
+# print(next(seq1))       
+# print(next(seq1))
+# print(next(seq1)) 
+# print(next(seq1)) 
+# print(next(seq1)) 
+# print(next(seq1)) 
+# print(next(seq1))  
+# print(next(seq1))
+
+
+# def squareSequence(x):
+#     for i in range(x):
+#         yield i*i
+        
+# newGenerat = squareSequence(7)
+# while True:
+#     try:
+#         print("Received on the next(): ", next(newGenerat))  
+#     except StopIteration:
+#         break
+#/
+# for sqr in newGenerat:
+#     print(sqr)          
+
+# newSquare = (i * i for i in range(7) )
+# print(next(newSquare))
+# print(next(newSquare))
+# print(next(newSquare))
+# print(next(newSquare))
+# print(next(newSquare))
+# print(next(newSquare))
+# print(next(newSquare))
+
+# import math
+# print(sum(i*i for i in range(7) ))
+
+# import re
+# # Search the string to see if it starts with "you" and ends with "python"
+# newTxt = "You can start learning python now"
+# x = re.search("^You.*python$", newTxt)
+
+# if x:
+#     print("Yes, we have a match!")
+# else:
+#     print("No match!")
+
+# import re
+# newTxt = "Python is very very easy to understand"
+# x = re.findall("place", newTxt)
+# print(x)
+
+# import re
+# newTxt ="Python is very easy"
+# x = re.sub("\s","$",newTxt,1)
+
+# print(x)
+
+# import re
+# newTxt = "Python is very easy"
+# x = re.search("very", newTxt)
+# print(x)
+
+# import re
+# # Searching for upper case C in the beginning of a word and prints its position
+# newTxt = "Code with Python now"
+# x = re.search(r"\bC\w+", newTxt)
+# print(x.span())
+
+# import re 
+# newStr = "Python is so good for beginners"
+# x = re.search(r"\bP\w+", newStr)
+# print(x.group())
+
+import statistics
+statistics.mean([3,5,7,10])
