@@ -36,5 +36,22 @@
 
 
 l = [45, 5, 6, 8]   
-temp = l[0]
+m = sorted(l)
+# print(m)
+# print(l)
+for k in range(0, len(l)):
+    temp = l[0]
+    for i in range(len(l)):
+        if(i == len(l)-1):
+            l[i] = temp
+        else:
+            l[i]= l[i+1]
+    if(m == l):
+        print(l) 
+        print("True")
 
+
+             
+    
+            
+                
