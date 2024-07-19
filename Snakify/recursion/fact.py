@@ -29,3 +29,7 @@
 # def maxi(*a):
 
 # print(maxi(5, 6, 7))
+
+import numpy as np  
+a = np.array([[1,2], [2,4]])
+print(a[0][1])
