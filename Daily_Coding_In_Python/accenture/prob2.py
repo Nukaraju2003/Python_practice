@@ -24,7 +24,7 @@ def OperationsBinaryString(str1):
         elif(str1[i] == "B"):
             a = a | int(str1[i+1])
         else:
-            a = a^ int(str1[i+1])
+            a = a ^ int(str1[i+1])
         i+=2
     return a   
 

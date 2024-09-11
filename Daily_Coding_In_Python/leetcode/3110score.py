@@ -1,4 +1,5 @@
 s = "hello"
+print(ord(s[0]))
 sum = 0
 for i in range(0,len(s)-1):
     dif = abs(ord(s[i]) - ord(s[i+1]))
